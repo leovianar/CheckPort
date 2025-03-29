@@ -1,0 +1,231 @@
+/* 🔹 Definição da paleta de cores moderna */
+:root {
+    --cor-primaria: #373737;
+    --cor-secundaria: #8db986;
+    --cor-terciaria: #acce91;
+    --cor-destaque: #badb73;
+    --cor-fundo: #efeae4;
+}
+
+/* 🔹 Reset para um design mais limpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🔹 Corpo da página */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    padding: 20px;
+}
+
+/* 🔹 Contêiner principal */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Navbar moderna */
+.navbar {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* 🔹 Container de conteúdo principal */
+.main-content {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* 🔹 Lista de motoristas */
+.motorista-card {
+    background: var(--cor-secundaria);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.motorista-card:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* 🔹 Botões modernos */
+button {
+    background-color: var(--cor-terciaria);
+    border: none;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* 🔹 Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 8px;
+}
+
+/* 🔹 Container dos botões de ação */
+.botoes-acoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* 🔹 Botão Editar */
+.btn-editar {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 48%;
+    transition: 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #d4ac0d;
+}
+
+/* 🔹 Botão Excluir */
+.btn-excluir {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 48%;
+    transition: 0.3s;
+}
+
+.btn-excluir:hover {
+    background-color: #c0392b;
+}
+
+/* 🔹 Modal de edição */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão cancelar */
+.btn-cancelar {
+    background-color: #aaa;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #8db986;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6d9f6b;
+}
+
+
+
+
+/* 🔹 Responsividade */
+@media (max-width: 500px) {
+    .main-content {
+        width: 90%;
+    }
+}
